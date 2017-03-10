@@ -1,0 +1,22 @@
+{
+  "name": "umbrella/payum-przelewy24-bundle",
+  "description": "Przelewy24 payments based on payum",
+  "license": "proprietary",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Umbrella Limited",
+      "email": "kontakt@umbrella.limited"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Umbrella\\": "src/"
+    }
+  },
+  "require": {
+    "sensio/framework-extra-bundle": "3.0.*",
+    "payum/payum-bundle": "^2.1",
+    "php-http/guzzle6-adapter": "^1.1"
+  }
+}
