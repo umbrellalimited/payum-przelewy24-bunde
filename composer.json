@@ -1,5 +1,5 @@
 {
-  "name": "umbrella/payum-przelewy24-bundle",
+  "name": "umbrella-limited/payum-przelewy24-bundle",
   "description": "Przelewy24 payments based on payum",
   "license": "proprietary",
   "type": "project",
