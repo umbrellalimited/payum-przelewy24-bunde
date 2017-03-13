@@ -2,13 +2,13 @@
 
 1. Create services in services.yml
 ```
-    em.payment.przelewy24.capture_offsite:
+    app.payment.przelewy24.capture_offsite:
         class: Umbrella\PayumPrzelewy24Bundle\Action\CaptureOffsite
 
-    em.payment.przelewy24.status:
+    app.payment.przelewy24.status:
         class: Umbrella\PayumPrzelewy24Bundle\Action\Status
 
-    em.payment.przelewy24.notify:
+    app.payment.przelewy24.notify:
         class: Umbrella\PayumPrzelewy24Bundle\Action\Notify
         arguments:
           - '@repository.payment'
@@ -18,7 +18,7 @@
 2. Create przelewy24 gateway
 
 ```
-    em.payment.przelewy24.gateway_factory:
+    app.payment.przelewy24.gateway_factory:
         class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
         arguments: ['Umbrella\PayumPrzelewy24Bundle\Factory\Przelewy24OffsiteGatewayFactory']
         tags:
@@ -42,7 +42,7 @@ payum:
             clientId: %clientId%
             clientSecret: %clientSecret% 
             returnUrl: %returnUrl% #http://localhost
-            payum.action.status: '@em.payment.przelewy24.status'
-            payum.action.capture_offsite: '@em.payment.przelewy24.capture_offsite'
-            payum.action.notify: '@em.payment.przelewy24.notify'
+            payum.action.status: '@app.payment.przelewy24.status'
+            payum.action.capture_offsite: '@app.payment.przelewy24.capture_offsite'
+            payum.action.notify: '@app.payment.przelewy24.notify'
 ```
