@@ -1,6 +1,6 @@
 {
   "name": "umbrella-limited/payum-przelewy24-bundle",
-  "description": "Przelewy24 payments based on payum",
+  "description": "Przelewy24 payments bundle for Symfony based on Payum",
   "license": "proprietary",
   "type": "project",
   "authors": [
