@@ -75,7 +75,7 @@ class ApiClient{
                         'p24_id_sprzedawcy' => $this->parameters['clientId'],
                         'p24_session_id' => $notificationResponse['p24_session_id'],
                         'p24_order_id' => $notificationResponse['p24_order_id'],
-                        'p24_kwota' => $notificationResponse['p24_amount'],
+                        'p24_kwota' => $notificationResponse['p24_kwota'],
                         'p24_sign' => $this->createHashForPaymentStatus(
                             $notificationResponse->toUnsafeArray()
                         )
