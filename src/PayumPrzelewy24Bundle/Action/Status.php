@@ -32,7 +32,7 @@ class Status implements ActionInterface
             return;
         }
 
-        $request->markUnknow();
+        $request->markUnknown();
     }
 
     /**
